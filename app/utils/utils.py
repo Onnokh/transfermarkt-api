@@ -138,3 +138,8 @@ def to_camel_case(headers: list) -> list:
     camel_case_headers = [header[0].lower() + header[1:] for header in camel_case_headers]
 
     return [header for header in camel_case_headers]
+
+
+def clean_response(response: dict) -> dict:
+    """Compatibility hook used by tests; keep response unchanged."""
+    return response

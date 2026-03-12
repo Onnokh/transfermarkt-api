@@ -176,6 +176,13 @@ class Clubs:
             HEIGHTS = "//div[@id='yw1']//td[6]/text()"
             FOOTS = "//div[@id='yw1']//td[7]//text()"
 
+    class Fixtures:
+        CLUB_NAME = "//h1//text()"
+        SEASON_SELECTED = "//select[contains(@name,'saison_id')]//option[@selected]/@value"
+        SECTIONS = "//h2[.//a[contains(@href,'/wettbewerb/') or contains(@href,'/pokalwettbewerb/')]]"
+        TABLE_HEADERS = ".//thead//th//text()"
+        TABLE_ROWS = ".//tbody/tr"
+
 
 class Competitions:
     class Profile:

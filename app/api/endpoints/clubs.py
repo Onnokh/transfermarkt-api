@@ -3,6 +3,7 @@ from typing import Optional
 from fastapi import APIRouter
 
 from app.schemas import clubs as schemas
+from app.services.clubs.fixtures import TransfermarktClubFixtures
 from app.services.clubs.players import TransfermarktClubPlayers
 from app.services.clubs.profile import TransfermarktClubProfile
 from app.services.clubs.search import TransfermarktClubSearch
@@ -29,3 +30,10 @@ def get_club_players(club_id: str, season_id: Optional[str] = None) -> dict:
     tfmkt = TransfermarktClubPlayers(club_id=club_id, season_id=season_id)
     club_players = tfmkt.get_club_players()
     return club_players
+
+
+@router.get("/{club_id}/fixtures", response_model=schemas.ClubFixtures, response_model_exclude_defaults=True)
+def get_club_fixtures(club_id: str, season_id: Optional[str] = None) -> dict:
+    tfmkt = TransfermarktClubFixtures(club_id=club_id, season_id=season_id)
+    club_fixtures = tfmkt.get_club_fixtures()
+    return club_fixtures
