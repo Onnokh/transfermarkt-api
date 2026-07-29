@@ -114,7 +114,18 @@ class TransfermarktBase:
                 server error status code.
         """
         bsoup: BeautifulSoup = self.request_url_bsoup()
-        return self.convert_bsoup_to_page(bsoup=bsoup)
+        page = self.convert_bsoup_to_page(bsoup=bsoup)
+        if page is None:
+            raise HTTPException(
+                status_code=502,
+                detail=(
+                    f"Failed to parse page content for url: {self.URL}. "
+                    "Transfermarkt returned an empty or unparseable response, which usually "
+                    "means the request was blocked (e.g. anti-bot/IP protection) rather than "
+                    "a genuine 'not found'."
+                ),
+            )
+        return page
 
     def raise_exception_if_not_found(self, xpath: str):
         """
