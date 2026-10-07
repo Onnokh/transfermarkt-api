@@ -1,73 +1,89 @@
-from dataclasses import dataclass
+import asyncio
+import re
+from typing import Optional
 
-from app.services.base import TransfermarktBase
-from app.utils.utils import extract_from_url, safe_split
-from app.utils.xpath import Players
+from app.tfmkt import TfmktClient
+from app.tfmkt.reference import get_reference, market_value_of, value_of
+
+# upstream typeDetails.type -> transferType; STANDARD is split into transfer and freeTransfer by its fee label
+TRANSFER_TYPES = {
+    "STANDARD": "transfer",
+    "INTERNAL_TRANSFER": "internal",
+    "ACTIVE_LOAN_TRANSFER": "loan",
+    "RETURNED_FROM_PREVIOUS_LOAN": "endOfLoan",
+}
+
+# formerClubsNote lists youth clubs as "Grandoli FC (1992-1995), Newell's Old Boys (1995-2000)"
+YOUTH_CLUB_SEPARATOR = re.compile(r"(?<=\)),\s*")
 
 
-@dataclass
-class TransfermarktPlayerTransfers(TransfermarktBase):
+async def get_player_transfers(tfmkt: TfmktClient, player_id: str) -> dict:
     """
-    A class for retrieving and parsing the player's transfer history and youth club details from Transfermarkt.
+    Transfer history, upcoming (pending) transfers first, then completed ones, most recent first.
 
-    Args:
-        player_id (str): The unique identifier of the player.
-        URL (str): The URL template for the player's transfers page on Transfermarkt.
+    `fee` is null when upstream has no numeric fee: free transfers, loans without fee and unknown fees (`-`).
+    `transferType` tells these apart: an unknown fee is a `transfer` with a null fee, never a `freeTransfer`.
     """
+    player, history, reference = await asyncio.gather(
+        tfmkt.player(player_id),
+        tfmkt.player_transfer_history(player_id),
+        get_reference(tfmkt),
+    )
+    transfers = (history or {}).get("history") or {}
+    records = (transfers.get("pending") or []) + (transfers.get("terminated") or [])
+    sides = [side for record in records for side in (record["transferSource"], record["transferDestination"])]
+    clubs, competitions = await asyncio.gather(
+        tfmkt.clubs(side["clubId"] for side in sides),
+        tfmkt.competitions(side.get("competitionId") for side in sides),
+    )
 
-    player_id: str = None
-    URL: str = "https://www.transfermarkt.com/-/transfers/spieler/{player_id}"
-    URL_TRANSFERS: str = "https://www.transfermarkt.com/ceapi/transferHistory/list/{player_id}"
-
-    def __post_init__(self) -> None:
-        """Initialize the TransfermarktPlayerTransfers class."""
-        self.URL = self.URL.format(player_id=self.player_id)
-        self.page = self.request_url_page()
-        self.raise_exception_if_not_found(xpath=Players.Profile.NAME)
-        self.transfer_history = self.make_request(url=self.URL_TRANSFERS.format(player_id=self.player_id))
-
-    def __parse_player_transfer_history(self) -> list:
-        """
-        Parse and retrieve the transfer history of the specified player from Transfermarkt,
-        including the unique identifier of each transfer, source club information (ID and name),
-        destination club information (ID and name), transfer date, upcoming status, season, market
-        value at the time of transfer, and transfer fee.
-
-        Returns:
-            list: A list of dictionaries, each containing details of the player's transfer history,
-        """
-        transfers = self.transfer_history.json().get("transfers")
-
-        return [
-            {
-                "id": extract_from_url(transfer["url"], "transfer_id"),
-                "clubFrom": {
-                    "id": extract_from_url(transfer["from"]["href"]),
-                    "name": transfer["from"]["clubName"],
-                },
-                "clubTo": {
-                    "id": extract_from_url(transfer["to"]["href"]),
-                    "name": transfer["to"]["clubName"],
-                },
-                "date": transfer["date"],
-                "upcoming": transfer["upcoming"],
-                "season": transfer["season"],
-                "marketValue": transfer["marketValue"],
-                "fee": transfer["fee"],
+    def club(side: dict) -> dict:
+        """Club with the league and country recorded at the time of this transfer."""
+        club_id = str(side["clubId"])
+        country_id = side.get("countryId")
+        competition_id = side.get("competitionId")
+        return {
+            "id": club_id,
+            "name": clubs.get(club_id, {}).get("name"),
+            "countryId": str(country_id) if country_id is not None else None,
+            "countryName": reference.country_name(country_id),
+            "league": {
+                "id": str(competition_id),
+                "name": competitions.get(str(competition_id), {}).get("name"),
             }
-            for transfer in transfers
-        ]
+            if competition_id
+            else None,
+        }
 
-    def get_player_transfers(self) -> dict:
-        """
-        Retrieve and parse the transfer history and youth clubs of the specified player from Transfermarkt.
+    former_clubs_note = (player.get("attributes") or {}).get("formerClubsNote")
 
-        Returns:
-            dict: A dictionary containing the player's unique identifier, parsed transfer history, youth clubs,
-                  and the timestamp of when the data was last updated.
-        """
-        self.response["id"] = self.player_id
-        self.response["transfers"] = self.__parse_player_transfer_history()
-        self.response["youthClubs"] = safe_split(self.get_text_by_xpath(Players.Transfers.YOUTH_CLUBS), ",")
+    return {
+        "id": player_id,
+        "transfers": [
+            {
+                "id": str(record["id"]),
+                "clubFrom": club(record["transferSource"]),
+                "clubTo": club(record["transferDestination"]),
+                "date": (record["details"].get("date") or "")[:10] or None,
+                "upcoming": bool(record["details"].get("isPending")),
+                "transferType": transfer_type(record),
+                "season": (record["details"].get("season") or {}).get("display"),
+                "marketValue": market_value_of(record["details"].get("marketValue")),
+                "fee": value_of(record["details"].get("fee")),
+                "age": record["details"].get("age"),
+                "contractUntil": (record["details"].get("contractUntilDate") or "")[:10] or None,
+                "remainingContractDays": (record["details"].get("remainingContractPeriod") or {}).get("days"),
+            }
+            for record in records
+        ],
+        "youthClubs": YOUTH_CLUB_SEPARATOR.split(former_clubs_note) if former_clubs_note else [],
+    }
 
-        return self.response
+
+def transfer_type(record: dict) -> Optional[str]:
+    """Kind of transfer, or None for an upstream type this API does not know."""
+    kind = TRANSFER_TYPES.get((record.get("typeDetails") or {}).get("type"))
+    fee_label = ((record["details"].get("fee") or {}).get("compact") or {}).get("content") or ""
+    if kind == "transfer" and fee_label.strip().lower() == "free transfer":
+        return "freeTransfer"
+    return kind

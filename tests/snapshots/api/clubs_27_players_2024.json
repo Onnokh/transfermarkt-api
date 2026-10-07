@@ -1,0 +1,688 @@
+{
+  "status": 200,
+  "body": {
+    "id": "27",
+    "players": [
+      {
+        "id": "607720",
+        "name": "Jonas Urbig",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/607720-1737037032.jpg",
+        "position": "Goalkeeper",
+        "shirtNumber": 40,
+        "isCaptain": false,
+        "dateOfBirth": "2003-08-08",
+        "age": null,
+        "nationality": [
+          "Germany"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 189,
+        "foot": "both",
+        "joinedOn": "2025-01-27",
+        "signedFrom": "1.FC Köln",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "468539",
+        "name": "Daniel Peretz",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/468539-1758188153.jpg",
+        "position": "Goalkeeper",
+        "shirtNumber": 18,
+        "isCaptain": false,
+        "dateOfBirth": "2000-07-10",
+        "age": null,
+        "nationality": [
+          "Israel",
+          "Germany"
+        ],
+        "currentClub": "Southampton FC",
+        "height": 190,
+        "foot": "right",
+        "joinedOn": "2023-08-25",
+        "signedFrom": "Maccabi Tel Aviv",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "17259",
+        "name": "Manuel Neuer",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/17259-1762943283.jpg",
+        "position": "Goalkeeper",
+        "shirtNumber": 1,
+        "isCaptain": false,
+        "dateOfBirth": "1986-03-27",
+        "age": null,
+        "nationality": [
+          "Germany"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 193,
+        "foot": "right",
+        "joinedOn": "2011-07-01",
+        "signedFrom": "FC Schalke 04",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "40680",
+        "name": "Sven Ulreich",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/40680-1700659982.jpg",
+        "position": "Goalkeeper",
+        "shirtNumber": 26,
+        "isCaptain": false,
+        "dateOfBirth": "1988-08-03",
+        "age": null,
+        "nationality": [
+          "Germany"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 192,
+        "foot": "right",
+        "joinedOn": "2021-07-01",
+        "signedFrom": "Hamburger SV",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "344695",
+        "name": "Dayot Upamecano",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/344695-1701245272.jpg",
+        "position": "Centre-Back",
+        "shirtNumber": 2,
+        "isCaptain": false,
+        "dateOfBirth": "1998-10-27",
+        "age": null,
+        "nationality": [
+          "France",
+          "Guinea-Bissau"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 186,
+        "foot": "right",
+        "joinedOn": "2021-07-05",
+        "signedFrom": "RB Leipzig",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "196357",
+        "name": "Jonathan Tah",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/196357-1789742523.jpg",
+        "position": "Centre-Back",
+        "shirtNumber": 4,
+        "isCaptain": false,
+        "dateOfBirth": "1996-02-11",
+        "age": null,
+        "nationality": [
+          "Germany",
+          "Cote d'Ivoire"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 195,
+        "foot": "right",
+        "joinedOn": null,
+        "signedFrom": null,
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "503482",
+        "name": "Min-jae Kim",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/503482-1700208062.jpg",
+        "position": "Centre-Back",
+        "shirtNumber": 3,
+        "isCaptain": false,
+        "dateOfBirth": "1996-11-15",
+        "age": null,
+        "nationality": [
+          "Korea, South"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 190,
+        "foot": "right",
+        "joinedOn": "2023-07-18",
+        "signedFrom": "SSC Napoli",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "353892",
+        "name": "Hiroki Ito",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/353892-1778846469.jpg",
+        "position": "Centre-Back",
+        "shirtNumber": 21,
+        "isCaptain": false,
+        "dateOfBirth": "1999-05-12",
+        "age": null,
+        "nationality": [
+          "Japan"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 188,
+        "foot": "left",
+        "joinedOn": "2024-07-01",
+        "signedFrom": "VfB Stuttgart",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "175722",
+        "name": "Eric Dier",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/175722-1665608595.jpg",
+        "position": "Centre-Back",
+        "shirtNumber": 15,
+        "isCaptain": false,
+        "dateOfBirth": "1994-01-15",
+        "age": null,
+        "nationality": [
+          "England",
+          "Portugal"
+        ],
+        "currentClub": "AS Monaco",
+        "height": 191,
+        "foot": "right",
+        "joinedOn": "2024-07-01",
+        "signedFrom": "Tottenham Hotspur",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "1259870",
+        "name": "Cassiano Kiala",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/1259870-1790773373.jpg",
+        "position": "Centre-Back",
+        "shirtNumber": null,
+        "isCaptain": false,
+        "dateOfBirth": "2009-01-11",
+        "age": null,
+        "nationality": [
+          "Germany",
+          "Angola"
+        ],
+        "currentClub": "FC Bayern Munich II",
+        "height": 186,
+        "foot": "right",
+        "joinedOn": null,
+        "signedFrom": null,
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "744729",
+        "name": "Tarek Buchmann",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/744729-1790774020.jpg",
+        "position": "Centre-Back",
+        "shirtNumber": 28,
+        "isCaptain": false,
+        "dateOfBirth": "2005-02-28",
+        "age": null,
+        "nationality": [
+          "Germany",
+          "Togo"
+        ],
+        "currentClub": "FC Bayern Munich II",
+        "height": 188,
+        "foot": "right",
+        "joinedOn": "2023-07-01",
+        "signedFrom": "FC Bayern Munich U19 ",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "424204",
+        "name": "Alphonso Davies",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/424204-1711745534.jpg",
+        "position": "Left-Back",
+        "shirtNumber": 19,
+        "isCaptain": false,
+        "dateOfBirth": "2000-11-02",
+        "age": null,
+        "nationality": [
+          "Canada",
+          "Liberia"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 183,
+        "foot": "left",
+        "joinedOn": "2019-01-01",
+        "signedFrom": "Vancouver Whitecaps FC",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "938146",
+        "name": "Adam Aznou",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/938146-1739807816.jpg",
+        "position": "Left-Back",
+        "shirtNumber": 49,
+        "isCaptain": false,
+        "dateOfBirth": "2006-06-02",
+        "age": null,
+        "nationality": [
+          "Morocco",
+          "Spain"
+        ],
+        "currentClub": "Málaga CF",
+        "height": 178,
+        "foot": "left",
+        "joinedOn": "2025-05-31",
+        "signedFrom": "Real Valladolid CF",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "170986",
+        "name": "Raphaël Guerreiro",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/170986-1711745629.jpg",
+        "position": "Left-Back",
+        "shirtNumber": 22,
+        "isCaptain": false,
+        "dateOfBirth": "1993-12-22",
+        "age": null,
+        "nationality": [
+          "Portugal",
+          "France"
+        ],
+        "currentClub": "Without Club",
+        "height": 170,
+        "foot": "left",
+        "joinedOn": "2023-07-01",
+        "signedFrom": "Borussia Dortmund",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "483046",
+        "name": "Josip Stanisic",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/483046-1716966862.jpg",
+        "position": "Right-Back",
+        "shirtNumber": 44,
+        "isCaptain": false,
+        "dateOfBirth": "2000-04-02",
+        "age": null,
+        "nationality": [
+          "Croatia",
+          "Germany"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 187,
+        "foot": "both",
+        "joinedOn": "2024-06-30",
+        "signedFrom": "Bayer 04 Leverkusen",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "223967",
+        "name": "Konrad Laimer",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/223967-1700659266.jpg",
+        "position": "Right-Back",
+        "shirtNumber": 27,
+        "isCaptain": false,
+        "dateOfBirth": "1997-05-27",
+        "age": null,
+        "nationality": [
+          "Austria"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 180,
+        "foot": "right",
+        "joinedOn": "2023-07-01",
+        "signedFrom": "RB Leipzig",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "475413",
+        "name": "Sacha Boey",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/475413-1706907003.jpg",
+        "position": "Right-Back",
+        "shirtNumber": 23,
+        "isCaptain": false,
+        "dateOfBirth": "2000-09-13",
+        "age": null,
+        "nationality": [
+          "France",
+          "Belgium"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 178,
+        "foot": "right",
+        "joinedOn": "2024-01-28",
+        "signedFrom": "Galatasaray",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "792380",
+        "name": "Aleksandar Pavlovic",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/792380-1727098078.jpg",
+        "position": "Defensive Midfield",
+        "shirtNumber": 45,
+        "isCaptain": false,
+        "dateOfBirth": "2004-05-03",
+        "age": null,
+        "nationality": [
+          "Germany",
+          "Serbia"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 188,
+        "foot": "both",
+        "joinedOn": "2023-11-01",
+        "signedFrom": "FC Bayern Munich II",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "161056",
+        "name": "Joshua Kimmich",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/161056-1700039639.jpg",
+        "position": "Defensive Midfield",
+        "shirtNumber": 6,
+        "isCaptain": false,
+        "dateOfBirth": "1995-02-08",
+        "age": null,
+        "nationality": [
+          "Germany"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 177,
+        "foot": "right",
+        "joinedOn": "2015-07-02",
+        "signedFrom": "VfB Stuttgart",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "257455",
+        "name": "João Palhinha",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/257455-1684773447.jpg",
+        "position": "Defensive Midfield",
+        "shirtNumber": 16,
+        "isCaptain": false,
+        "dateOfBirth": "1995-07-09",
+        "age": null,
+        "nationality": [
+          "Portugal"
+        ],
+        "currentClub": "SL Benfica",
+        "height": 190,
+        "foot": "right",
+        "joinedOn": "2024-07-11",
+        "signedFrom": "Fulham FC",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "1118495",
+        "name": "David Santos Daiber",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/1118495-1790773477.jpg",
+        "position": "Defensive Midfield",
+        "shirtNumber": 47,
+        "isCaptain": false,
+        "dateOfBirth": "2007-01-10",
+        "age": null,
+        "nationality": [
+          "Portugal",
+          "Germany"
+        ],
+        "currentClub": "FC Bayern Munich II",
+        "height": 185,
+        "foot": "right",
+        "joinedOn": null,
+        "signedFrom": null,
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "822959",
+        "name": "Tom Bischof",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/822959-1758269709.jpg",
+        "position": "Central Midfield",
+        "shirtNumber": 20,
+        "isCaptain": false,
+        "dateOfBirth": "2005-06-28",
+        "age": null,
+        "nationality": [
+          "Germany"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 176,
+        "foot": "left",
+        "joinedOn": null,
+        "signedFrom": null,
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "153084",
+        "name": "Leon Goretzka",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/153084-1700040179.jpg",
+        "position": "Central Midfield",
+        "shirtNumber": 8,
+        "isCaptain": false,
+        "dateOfBirth": "1995-02-06",
+        "age": null,
+        "nationality": [
+          "Germany"
+        ],
+        "currentClub": "Aston Villa",
+        "height": 189,
+        "foot": "right",
+        "joinedOn": "2018-07-01",
+        "signedFrom": "FC Schalke 04",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "580195",
+        "name": "Jamal Musiala",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/580195-1781163507.jpg",
+        "position": "Attacking Midfield",
+        "shirtNumber": 42,
+        "isCaptain": false,
+        "dateOfBirth": "2003-02-26",
+        "age": null,
+        "nationality": [
+          "Germany",
+          "England"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 184,
+        "foot": "right",
+        "joinedOn": "2020-07-01",
+        "signedFrom": "FC Bayern Munich U19 ",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "1075147",
+        "name": "Lennart Karl",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/1075147-1759417800.jpg",
+        "position": "Attacking Midfield",
+        "shirtNumber": 42,
+        "isCaptain": false,
+        "dateOfBirth": "2008-02-22",
+        "age": null,
+        "nationality": [
+          "Germany"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 168,
+        "foot": "left",
+        "joinedOn": null,
+        "signedFrom": null,
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "243714",
+        "name": "Kingsley Coman",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/243714-1700040256.jpg",
+        "position": "Left Winger",
+        "shirtNumber": 11,
+        "isCaptain": false,
+        "dateOfBirth": "1996-06-13",
+        "age": null,
+        "nationality": [
+          "France",
+          "Guadeloupe"
+        ],
+        "currentClub": "Al-Nassr FC",
+        "height": 181,
+        "foot": "right",
+        "joinedOn": "2017-07-01",
+        "signedFrom": "Juventus FC",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "829316",
+        "name": "Maurice Krattenmacher",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/829316-1748006424.jpg",
+        "position": "Left Winger",
+        "shirtNumber": 35,
+        "isCaptain": false,
+        "dateOfBirth": "2005-08-11",
+        "age": null,
+        "nationality": [
+          "Germany"
+        ],
+        "currentClub": "SV 07 Elversberg",
+        "height": 180,
+        "foot": "both",
+        "joinedOn": "2025-05-31",
+        "signedFrom": "SSV Ulm 1846",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "604327",
+        "name": "Gabriel Vidovic",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/604327-1693303272.jpg",
+        "position": "Left Winger",
+        "shirtNumber": 24,
+        "isCaptain": false,
+        "dateOfBirth": "2003-12-01",
+        "age": null,
+        "nationality": [
+          "Croatia",
+          "Germany"
+        ],
+        "currentClub": "SC Paderborn 07",
+        "height": 180,
+        "foot": "right",
+        "joinedOn": "2025-02-03",
+        "signedFrom": "1.FSV Mainz 05",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "566723",
+        "name": "Michael Olise",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/566723-1762944477.jpg",
+        "position": "Right Winger",
+        "shirtNumber": 17,
+        "isCaptain": false,
+        "dateOfBirth": "2001-12-12",
+        "age": null,
+        "nationality": [
+          "France",
+          "England"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 180,
+        "foot": "left",
+        "joinedOn": "2024-07-07",
+        "signedFrom": "Crystal Palace",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "192565",
+        "name": "Leroy Sané",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/192565-1694587968.jpg",
+        "position": "Right Winger",
+        "shirtNumber": 10,
+        "isCaptain": false,
+        "dateOfBirth": "1996-01-11",
+        "age": null,
+        "nationality": [
+          "Germany",
+          "France"
+        ],
+        "currentClub": "Galatasaray",
+        "height": 183,
+        "foot": "left",
+        "joinedOn": "2020-07-15",
+        "signedFrom": "Manchester City",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "159471",
+        "name": "Serge Gnabry",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/159471-1759909173.jpg",
+        "position": "Second Striker",
+        "shirtNumber": 7,
+        "isCaptain": false,
+        "dateOfBirth": "1995-07-14",
+        "age": null,
+        "nationality": [
+          "Germany",
+          "Cote d'Ivoire"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 176,
+        "foot": "right",
+        "joinedOn": "2018-06-30",
+        "signedFrom": "TSG 1899 Hoffenheim",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "58358",
+        "name": "Thomas Müller",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/58358-1771861722.jpg",
+        "position": "Second Striker",
+        "shirtNumber": 25,
+        "isCaptain": false,
+        "dateOfBirth": "1989-09-13",
+        "age": null,
+        "nationality": [
+          "Germany"
+        ],
+        "currentClub": "Vancouver Whitecaps FC",
+        "height": 185,
+        "foot": "right",
+        "joinedOn": "2009-07-01",
+        "signedFrom": "FC Bayern Munich II",
+        "contract": null,
+        "marketValue": null
+      },
+      {
+        "id": "132098",
+        "name": "Harry Kane",
+        "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/132098-1700211169.jpg",
+        "position": "Centre-Forward",
+        "shirtNumber": 9,
+        "isCaptain": false,
+        "dateOfBirth": "1993-07-28",
+        "age": null,
+        "nationality": [
+          "England",
+          "Ireland"
+        ],
+        "currentClub": "Bayern Munich",
+        "height": 188,
+        "foot": "right",
+        "joinedOn": "2023-08-12",
+        "signedFrom": "Tottenham Hotspur",
+        "contract": null,
+        "marketValue": null
+      }
+    ]
+  }
+}

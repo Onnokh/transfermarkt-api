@@ -1,0 +1,64 @@
+{
+  "status": 200,
+  "body": {
+    "id": "8198",
+    "url": "https://www.transfermarkt.com/cristiano-ronaldo/profil/spieler/8198",
+    "name": "Cristiano Ronaldo",
+    "fullName": "Cristiano Ronaldo dos Santos Aveiro",
+    "nameInHomeCountry": null,
+    "imageUrl": "https://img.a.transfermarkt.technology/portrait/big/8198-1748102259.jpg",
+    "dateOfBirth": "1985-02-05",
+    "dateOfDeath": null,
+    "placeOfBirth": {
+      "city": "Funchal",
+      "country": "Portugal"
+    },
+    "age": 41,
+    "height": 185,
+    "citizenship": [
+      "Portugal"
+    ],
+    "isRetired": false,
+    "retiredSince": null,
+    "position": {
+      "main": "Centre-Forward",
+      "group": "Striker",
+      "other": [
+        "Left Winger",
+        "Right Winger"
+      ]
+    },
+    "foot": "right",
+    "shirtNumber": "#7",
+    "club": {
+      "id": "18544",
+      "name": "Al-Nassr FC",
+      "joined": "2023-01-01",
+      "isCaptain": true,
+      "contractExpires": "2027-06-30",
+      "lastContractRenewal": "2025-06-26",
+      "contractOption": null,
+      "lastClubId": null,
+      "lastClubName": null
+    },
+    "nationalTeam": null,
+    "marketValue": 10000000,
+    "marketValueDetails": {
+      "lastUpdated": "2026-06-04",
+      "trend": "decreased",
+      "previous": {
+        "value": 12000000,
+        "date": "2025-12-18"
+      },
+      "highest": {
+        "value": 120000000,
+        "date": "2018-01-01"
+      }
+    },
+    "agent": {
+      "name": "Gestifute",
+      "url": "/gestifute/beraterfirma/berater/413"
+    },
+    "outfitter": "Nike"
+  }
+}

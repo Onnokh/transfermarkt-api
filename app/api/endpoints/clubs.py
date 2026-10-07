@@ -1,39 +1,42 @@
-from typing import Optional
+from typing import Annotated, Optional
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Query
 
+from app.api.params import PageNumber
 from app.schemas import clubs as schemas
-from app.services.clubs.fixtures import TransfermarktClubFixtures
-from app.services.clubs.players import TransfermarktClubPlayers
-from app.services.clubs.profile import TransfermarktClubProfile
-from app.services.clubs.search import TransfermarktClubSearch
+from app.schemas.achievements import Achievements
+from app.schemas.clubs.listing import ClubListing
+from app.services.clubs import achievements, listing, players, profile, search
+from app.tfmkt import Tfmkt
 
 router = APIRouter()
 
 
-@router.get("/search/{club_name}", response_model=schemas.ClubSearch, response_model_exclude_none=True)
-def search_clubs(club_name: str, page_number: Optional[int] = 1) -> dict:
-    tfmkt = TransfermarktClubSearch(query=club_name, page_number=page_number)
-    found_clubs = tfmkt.search_clubs()
-    return found_clubs
+@router.get("/", response_model=ClubListing)
+async def list_clubs(country_id: Annotated[int, Query(gt=0)], tfmkt: Tfmkt) -> dict:
+    """List available clubs for a country. Coverage is limited; this is not a complete country directory."""
+    return await listing.list_clubs(tfmkt, country_id)
 
 
-@router.get("/{club_id}/profile", response_model=schemas.ClubProfile, response_model_exclude_defaults=True)
-def get_club_profile(club_id: str) -> dict:
-    tfmkt = TransfermarktClubProfile(club_id=club_id)
-    club_profile = tfmkt.get_club_profile()
-    return club_profile
+@router.get("/search/{club_name}", response_model=schemas.ClubSearch)
+async def search_clubs(club_name: str, tfmkt: Tfmkt, page_number: PageNumber = 1) -> dict:
+    """Search clubs by name."""
+    return await search.search_clubs(tfmkt, club_name, page_number)
 
 
-@router.get("/{club_id}/players", response_model=schemas.ClubPlayers, response_model_exclude_defaults=True)
-def get_club_players(club_id: str, season_id: Optional[str] = None) -> dict:
-    tfmkt = TransfermarktClubPlayers(club_id=club_id, season_id=season_id)
-    club_players = tfmkt.get_club_players()
-    return club_players
+@router.get("/{club_id}/profile", response_model=schemas.ClubProfile)
+async def get_club_profile(club_id: str, tfmkt: Tfmkt) -> dict:
+    """Get a club's profile."""
+    return await profile.get_club_profile(tfmkt, club_id)
 
 
-@router.get("/{club_id}/fixtures", response_model=schemas.ClubFixtures, response_model_exclude_defaults=True)
-def get_club_fixtures(club_id: str, season_id: Optional[str] = None) -> dict:
-    tfmkt = TransfermarktClubFixtures(club_id=club_id, season_id=season_id)
-    club_fixtures = tfmkt.get_club_fixtures()
-    return club_fixtures
+@router.get("/{club_id}/players", response_model=schemas.ClubPlayers)
+async def get_club_players(club_id: str, tfmkt: Tfmkt, season_id: Optional[str] = None) -> dict:
+    """Get a club's squad for a season (current squad by default)."""
+    return await players.get_club_players(tfmkt, club_id, season_id)
+
+
+@router.get("/{club_id}/achievements", response_model=Achievements)
+async def get_club_achievements(club_id: str, tfmkt: Tfmkt) -> dict:
+    """Get a club's titles by season."""
+    return await achievements.get_club_achievements(tfmkt, club_id)

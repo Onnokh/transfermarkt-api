@@ -1,42 +1,31 @@
+from collections.abc import Iterator
+
 import pytest
-from schema import Regex
+from fastapi.testclient import TestClient
+
+from app.main import app
+from app.tfmkt import TfmktClient, get_tfmkt
+from tests.upstream import FixtureStore, tfmkt_transport
+
+
+@pytest.fixture(scope="session")
+def tfmkt_store() -> FixtureStore:
+    """Recorded tfmkt responses."""
+    return FixtureStore("tfmkt")
 
 
 @pytest.fixture
-def len_greater_than_0():
-    return lambda x: len(x) > 0
+def client(tfmkt_store: FixtureStore) -> Iterator[TestClient]:
+    """API client whose upstream requests are served from recorded fixtures; never touches the network."""
+    tfmkt = TfmktClient(transport=tfmkt_transport(tfmkt_store))
+    app.dependency_overrides[get_tfmkt] = lambda: tfmkt
+    with TestClient(app, raise_server_exceptions=False) as test_client:
+        yield test_client
+    app.dependency_overrides.clear()
 
 
 @pytest.fixture
-def len_equal_to_0():
-    return lambda x: len(x) == 0
-
-
-@pytest.fixture
-def regex_club_url():
-    return Regex(r"^/\w.+/startseite/verein/\d+$")
-
-
-@pytest.fixture
-def regex_date_mmm_dd_yyyy():
-    return Regex(r"^(\w+\s\d+,\s\d+)|(-)$")
-
-
-@pytest.fixture
-def regex_market_value():
-    return Regex(r"^(€\d+\.\d+.(m|bn))|(€\d+.k)|(-)$")
-
-
-@pytest.fixture
-def regex_value_variation():
-    return Regex(r"^(\+|-)?€(\+|-)?(\d.+)(k|m)$")
-
-
-@pytest.fixture
-def regex_integer():
-    return Regex(r"^(\d+|-)$")
-
-
-@pytest.fixture
-def regex_height():
-    return Regex(r"^(\d+,\d+m)|(m)$")
+def live_client() -> Iterator[TestClient]:
+    """API client that calls the real upstreams."""
+    with TestClient(app, raise_server_exceptions=False) as test_client:
+        yield test_client
