@@ -33,6 +33,7 @@ https://transfermarkt-api.fly.dev/
 | `GET /clubs/{club_id}/profile` | Squad value details, historical names and stadium details |
 | `GET /clubs/{club_id}/players?season_id=` | Current squad by default; shirt number and captaincy for the selected season |
 | `GET /clubs/{club_id}/achievements` | Club titles by season |
+| `GET /clubs/{club_id}/fixtures?season_id=` | Played and upcoming matches, current season by default; kickoff date and time in UTC (fork addition) |
 | `GET /coaches/search/{coach_name}?page_number=` | 10 results per page |
 | `GET /coaches/{coach_id}/profile` | |
 | `GET /competitions/search/{competition_name}?page_number=` | 10 results per page |

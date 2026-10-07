@@ -176,6 +176,10 @@ class TfmktClient:
         """Fetch a club's squad for a season (current squad by default)."""
         return await self.get(f"/club/{club_id}/squad", params=_season(season_id))
 
+    async def club_fixtures(self, club_id: str, season_id: Optional[str] = None) -> dict:
+        """Fetch a club's played and upcoming matches for a season (current by default)."""
+        return await self.get(f"/club/{club_id}/fixtures", params=_season(season_id))
+
     async def club_achievements(self, club_id: str) -> dict:
         """Fetch a club's titles (one record per title won)."""
         return await self.get(f"/club/{club_id}/achievement")

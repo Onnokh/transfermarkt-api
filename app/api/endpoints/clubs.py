@@ -6,7 +6,7 @@ from app.api.params import PageNumber
 from app.schemas import clubs as schemas
 from app.schemas.achievements import Achievements
 from app.schemas.clubs.listing import ClubListing
-from app.services.clubs import achievements, listing, players, profile, search
+from app.services.clubs import achievements, fixtures, listing, players, profile, search
 from app.tfmkt import Tfmkt
 
 router = APIRouter()
@@ -40,3 +40,9 @@ async def get_club_players(club_id: str, tfmkt: Tfmkt, season_id: Optional[str] 
 async def get_club_achievements(club_id: str, tfmkt: Tfmkt) -> dict:
     """Get a club's titles by season."""
     return await achievements.get_club_achievements(tfmkt, club_id)
+
+
+@router.get("/{club_id}/fixtures", response_model=schemas.ClubFixtures)
+async def get_club_fixtures(club_id: str, tfmkt: Tfmkt, season_id: Optional[str] = None) -> dict:
+    """Get a club's played and upcoming matches for a season (current season by default)."""
+    return await fixtures.get_club_fixtures(tfmkt, club_id, season_id)

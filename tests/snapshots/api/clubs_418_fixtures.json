@@ -1,0 +1,1343 @@
+{
+  "status": 200,
+  "body": {
+    "id": "418",
+    "seasonId": "2026",
+    "fixtures": [
+      {
+        "matchId": "4909472",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "2",
+        "date": "2026-08-22",
+        "time": "19:30",
+        "homeClub": {
+          "id": "714",
+          "name": "RCD Espanyol Barcelona",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 1
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "714",
+          "name": "RCD Espanyol Barcelona"
+        },
+        "resultRaw": "1:2",
+        "goalsFor": 2,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 33304
+      },
+      {
+        "matchId": "4909447",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "1",
+        "date": "2026-08-26",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "681",
+          "name": "Real Sociedad",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "681",
+          "name": "Real Sociedad"
+        },
+        "resultRaw": "4:1",
+        "goalsFor": 4,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 72226
+      },
+      {
+        "matchId": "4909485",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "3",
+        "date": "2026-08-30",
+        "time": "15:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "1084",
+          "name": "Málaga CF",
+          "tablePosition": 16
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "1084",
+          "name": "Málaga CF"
+        },
+        "resultRaw": "4:0",
+        "goalsFor": 4,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 74799
+      },
+      {
+        "matchId": "4909498",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "4",
+        "date": "2026-09-04",
+        "time": "19:00",
+        "homeClub": {
+          "id": "150",
+          "name": "Real Betis Balompié",
+          "tablePosition": 7
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "150",
+          "name": "Real Betis Balompié"
+        },
+        "resultRaw": "1:0",
+        "goalsFor": 0,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 66046
+      },
+      {
+        "matchId": "5035860",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "1",
+        "date": "2026-09-08",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "46",
+          "name": "Inter Milan",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "46",
+          "name": "Inter Milan"
+        },
+        "resultRaw": "2:1",
+        "goalsFor": 2,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 74858
+      },
+      {
+        "matchId": "4909530",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "5",
+        "date": "2026-09-12",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 3
+        },
+        "awayClub": {
+          "id": "367",
+          "name": "Rayo Vallecano",
+          "tablePosition": 14
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "367",
+          "name": "Rayo Vallecano"
+        },
+        "resultRaw": "4:1",
+        "goalsFor": 4,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 71898
+      },
+      {
+        "matchId": "4909564",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "6",
+        "date": "2026-09-15",
+        "time": "19:30",
+        "homeClub": {
+          "id": "1531",
+          "name": "Elche CF",
+          "tablePosition": 19
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1531",
+          "name": "Elche CF"
+        },
+        "resultRaw": "2:3",
+        "goalsFor": 3,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 30383
+      },
+      {
+        "matchId": "4909609",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "7",
+        "date": "2026-09-20",
+        "time": "14:15",
+        "homeClub": {
+          "id": "13",
+          "name": "Atlético de Madrid",
+          "tablePosition": 4
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "13",
+          "name": "Atlético de Madrid"
+        },
+        "resultRaw": "2:1",
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 70514
+      },
+      {
+        "matchId": "4909726",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "8",
+        "date": "2026-10-10",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 4
+        },
+        "awayClub": {
+          "id": "1050",
+          "name": "Villarreal CF",
+          "tablePosition": 9
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "1050",
+          "name": "Villarreal CF"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "5035896",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "2",
+        "date": "2026-10-14",
+        "time": "19:00",
+        "homeClub": {
+          "id": "12",
+          "name": "AS Roma",
+          "tablePosition": 20
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 14
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "12",
+          "name": "AS Roma"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4909735",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "9",
+        "date": "2026-10-18",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "368",
+          "name": "Sevilla FC",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "368",
+          "name": "Sevilla FC"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "5035862",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "3",
+        "date": "2026-10-21",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "23826",
+          "name": "RB Leipzig",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "23826",
+          "name": "RB Leipzig"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918419",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "10",
+        "date": "2026-10-25",
+        "time": "20:00",
+        "homeClub": {
+          "id": "131",
+          "name": "FC Barcelona",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "131",
+          "name": "FC Barcelona"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918432",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "11",
+        "date": "2026-11-01",
+        "time": "15:15",
+        "homeClub": {
+          "id": "630",
+          "name": "Racing Santander",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "630",
+          "name": "Racing Santander"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "5035975",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "4",
+        "date": "2026-11-04",
+        "time": "17:45",
+        "homeClub": {
+          "id": "2441",
+          "name": "AEK Athens",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "2441",
+          "name": "AEK Athens"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918443",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "12",
+        "date": "2026-11-08",
+        "time": null,
+        "homeClub": {
+          "id": "1049",
+          "name": "Valencia CF",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1049",
+          "name": "Valencia CF"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918453",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "13",
+        "date": "2026-11-22",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "940",
+          "name": "Celta de Vigo",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "940",
+          "name": "Celta de Vigo"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "5035861",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "5",
+        "date": "2026-11-24",
+        "time": "20:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "383",
+          "name": "PSV Eindhoven",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "383",
+          "name": "PSV Eindhoven"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918462",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "14",
+        "date": "2026-11-29",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "1108",
+          "name": "Deportivo Alavés",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "1108",
+          "name": "Deportivo Alavés"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918466",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "15",
+        "date": "2026-12-06",
+        "time": null,
+        "homeClub": {
+          "id": "621",
+          "name": "Athletic Bilbao",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "621",
+          "name": "Athletic Bilbao"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "5035880",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "6",
+        "date": "2026-12-09",
+        "time": "20:00",
+        "homeClub": {
+          "id": "11",
+          "name": "Arsenal FC",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "11",
+          "name": "Arsenal FC"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918482",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "16",
+        "date": "2026-12-13",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "331",
+          "name": "CA Osasuna",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "331",
+          "name": "CA Osasuna"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918488",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "17",
+        "date": "2026-12-20",
+        "time": null,
+        "homeClub": {
+          "id": "897",
+          "name": "Deportivo A Coruña",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "897",
+          "name": "Deportivo A Coruña"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918502",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "18",
+        "date": "2027-01-03",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "3709",
+          "name": "Getafe CF",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "3709",
+          "name": "Getafe CF"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918512",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "19",
+        "date": "2027-01-10",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "3368",
+          "name": "Levante UD",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "3368",
+          "name": "Levante UD"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918521",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "20",
+        "date": "2027-01-17",
+        "time": null,
+        "homeClub": {
+          "id": "1084",
+          "name": "Málaga CF",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1084",
+          "name": "Málaga CF"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "5035863",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "7",
+        "date": "2027-01-19",
+        "time": "20:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "413",
+          "name": "LASK",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "413",
+          "name": "LASK"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918532",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "21",
+        "date": "2027-01-24",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "150",
+          "name": "Real Betis Balompié",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "150",
+          "name": "Real Betis Balompié"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "5035955",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "8",
+        "date": "2027-01-27",
+        "time": "20:00",
+        "homeClub": {
+          "id": "660",
+          "name": "Shakhtar Donetsk",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "660",
+          "name": "Shakhtar Donetsk"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918542",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "22",
+        "date": "2027-01-31",
+        "time": null,
+        "homeClub": {
+          "id": "367",
+          "name": "Rayo Vallecano",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "367",
+          "name": "Rayo Vallecano"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918553",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "23",
+        "date": "2027-02-07",
+        "time": null,
+        "homeClub": {
+          "id": "681",
+          "name": "Real Sociedad",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "681",
+          "name": "Real Sociedad"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918560",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "24",
+        "date": "2027-02-14",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "621",
+          "name": "Athletic Bilbao",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "621",
+          "name": "Athletic Bilbao"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918573",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "25",
+        "date": "2027-02-21",
+        "time": null,
+        "homeClub": {
+          "id": "368",
+          "name": "Sevilla FC",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "368",
+          "name": "Sevilla FC"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918583",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "26",
+        "date": "2027-02-28",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "1049",
+          "name": "Valencia CF",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "1049",
+          "name": "Valencia CF"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918594",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "27",
+        "date": "2027-03-07",
+        "time": null,
+        "homeClub": {
+          "id": "1050",
+          "name": "Villarreal CF",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1050",
+          "name": "Villarreal CF"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918604",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "28",
+        "date": "2027-03-14",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "714",
+          "name": "RCD Espanyol Barcelona",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "714",
+          "name": "RCD Espanyol Barcelona"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918606",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "29",
+        "date": "2027-03-21",
+        "time": null,
+        "homeClub": {
+          "id": "940",
+          "name": "Celta de Vigo",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "940",
+          "name": "Celta de Vigo"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918631",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "30",
+        "date": "2027-04-04",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "13",
+          "name": "Atlético de Madrid",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "13",
+          "name": "Atlético de Madrid"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918637",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "31",
+        "date": "2027-04-11",
+        "time": null,
+        "homeClub": {
+          "id": "331",
+          "name": "CA Osasuna",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "331",
+          "name": "CA Osasuna"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918649",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "32",
+        "date": "2027-04-18",
+        "time": null,
+        "homeClub": {
+          "id": "3709",
+          "name": "Getafe CF",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "3709",
+          "name": "Getafe CF"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918659",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "33",
+        "date": "2027-04-21",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "1531",
+          "name": "Elche CF",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "1531",
+          "name": "Elche CF"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918669",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "34",
+        "date": "2027-05-02",
+        "time": null,
+        "homeClub": {
+          "id": "3368",
+          "name": "Levante UD",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "3368",
+          "name": "Levante UD"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918680",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "35",
+        "date": "2027-05-09",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "131",
+          "name": "FC Barcelona",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "131",
+          "name": "FC Barcelona"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918690",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "36",
+        "date": "2027-05-16",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "630",
+          "name": "Racing Santander",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "630",
+          "name": "Racing Santander"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918703",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "37",
+        "date": "2027-05-23",
+        "time": null,
+        "homeClub": {
+          "id": "1108",
+          "name": "Deportivo Alavés",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1108",
+          "name": "Deportivo Alavés"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4918701",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "38",
+        "date": "2027-05-30",
+        "time": null,
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "897",
+          "name": "Deportivo A Coruña",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "897",
+          "name": "Deportivo A Coruña"
+        },
+        "resultRaw": null,
+        "goalsFor": null,
+        "goalsAgainst": null,
+        "resultNote": null,
+        "attendance": null
+      }
+    ]
+  }
+}

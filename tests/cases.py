@@ -48,4 +48,8 @@ CASES: list[tuple[str, str]] = [
     ("games_999999999", "/games/999999999"),
     ("players_28003_matches", "/players/28003/matches"),
     ("players_28003_matches_2014", "/players/28003/matches?season_id=2014"),
+    # Fork: club fixtures
+    ("clubs_418_fixtures_2024", "/clubs/418/fixtures?season_id=2024"),
+    ("clubs_418_fixtures", "/clubs/418/fixtures"),
+    ("clubs_0_fixtures", "/clubs/0/fixtures"),
 ]

@@ -1,0 +1,1807 @@
+{
+  "status": 200,
+  "body": {
+    "id": "418",
+    "seasonId": "2024",
+    "fixtures": [
+      {
+        "matchId": "4357029",
+        "competitionName": "UEFA Super Cup",
+        "competitionId": "USC",
+        "competitionUrl": "/uefa-super-cup/startseite/pokalwettbewerb/USC",
+        "matchday": "1",
+        "date": "2024-08-14",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "800",
+          "name": "Atalanta BC",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "800",
+          "name": "Atalanta BC"
+        },
+        "resultRaw": "2:0",
+        "goalsFor": 2,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 56042
+      },
+      {
+        "matchId": "4361547",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "1",
+        "date": "2024-08-18",
+        "time": "19:30",
+        "homeClub": {
+          "id": "237",
+          "name": "RCD Mallorca",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "237",
+          "name": "RCD Mallorca"
+        },
+        "resultRaw": "1:1",
+        "goalsFor": 1,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 23010
+      },
+      {
+        "matchId": "4361557",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "2",
+        "date": "2024-08-25",
+        "time": "15:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 9
+        },
+        "awayClub": {
+          "id": "366",
+          "name": "Real Valladolid CF",
+          "tablePosition": 4
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "366",
+          "name": "Real Valladolid CF"
+        },
+        "resultRaw": "3:0",
+        "goalsFor": 3,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 70178
+      },
+      {
+        "matchId": "4361567",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "3",
+        "date": "2024-08-29",
+        "time": "19:30",
+        "homeClub": {
+          "id": "472",
+          "name": "UD Las Palmas",
+          "tablePosition": 14
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 7
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "472",
+          "name": "UD Las Palmas"
+        },
+        "resultRaw": "1:1",
+        "goalsFor": 1,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 31192
+      },
+      {
+        "matchId": "4364912",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "4",
+        "date": "2024-09-01",
+        "time": "19:30",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 5
+        },
+        "awayClub": {
+          "id": "150",
+          "name": "Real Betis Balompié",
+          "tablePosition": 6
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "150",
+          "name": "Real Betis Balompié"
+        },
+        "resultRaw": "2:0",
+        "goalsFor": 2,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 73072
+      },
+      {
+        "matchId": "4405327",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "5",
+        "date": "2024-09-14",
+        "time": "19:00",
+        "homeClub": {
+          "id": "681",
+          "name": "Real Sociedad",
+          "tablePosition": 14
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 4
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "681",
+          "name": "Real Sociedad"
+        },
+        "resultRaw": "0:2",
+        "goalsFor": 2,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 37370
+      },
+      {
+        "matchId": "4445037",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "1",
+        "date": "2024-09-17",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "79",
+          "name": "VfB Stuttgart",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "79",
+          "name": "VfB Stuttgart"
+        },
+        "resultRaw": "3:1",
+        "goalsFor": 3,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 71288
+      },
+      {
+        "matchId": "4405338",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "6",
+        "date": "2024-09-21",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 4
+        },
+        "awayClub": {
+          "id": "714",
+          "name": "RCD Espanyol Barcelona",
+          "tablePosition": 7
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "714",
+          "name": "RCD Espanyol Barcelona"
+        },
+        "resultRaw": "4:1",
+        "goalsFor": 4,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 72102
+      },
+      {
+        "matchId": "4405348",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "7",
+        "date": "2024-09-24",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "1108",
+          "name": "Deportivo Alavés",
+          "tablePosition": 6
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "1108",
+          "name": "Deportivo Alavés"
+        },
+        "resultRaw": "3:2",
+        "goalsFor": 3,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 67480
+      },
+      {
+        "matchId": "4405350",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "8",
+        "date": "2024-09-29",
+        "time": "19:00",
+        "homeClub": {
+          "id": "13",
+          "name": "Atlético de Madrid",
+          "tablePosition": 3
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "13",
+          "name": "Atlético de Madrid"
+        },
+        "resultRaw": "1:1",
+        "goalsFor": 1,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 70112
+      },
+      {
+        "matchId": "4445120",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "2",
+        "date": "2024-10-02",
+        "time": "19:00",
+        "homeClub": {
+          "id": "1082",
+          "name": "LOSC Lille",
+          "tablePosition": 30
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 8
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1082",
+          "name": "LOSC Lille"
+        },
+        "resultRaw": "1:0",
+        "goalsFor": 0,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 48205
+      },
+      {
+        "matchId": "4405360",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "9",
+        "date": "2024-10-05",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "1050",
+          "name": "Villarreal CF",
+          "tablePosition": 3
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "1050",
+          "name": "Villarreal CF"
+        },
+        "resultRaw": "2:0",
+        "goalsFor": 2,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 73842
+      },
+      {
+        "matchId": "4405371",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "10",
+        "date": "2024-10-19",
+        "time": "19:00",
+        "homeClub": {
+          "id": "940",
+          "name": "Celta de Vigo",
+          "tablePosition": 9
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "940",
+          "name": "Celta de Vigo"
+        },
+        "resultRaw": "1:2",
+        "goalsFor": 2,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 24445
+      },
+      {
+        "matchId": "4445032",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "3",
+        "date": "2024-10-22",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 17
+        },
+        "awayClub": {
+          "id": "16",
+          "name": "Borussia Dortmund",
+          "tablePosition": 1
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "16",
+          "name": "Borussia Dortmund"
+        },
+        "resultRaw": "5:2",
+        "goalsFor": 5,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 74642
+      },
+      {
+        "matchId": "4407518",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "11",
+        "date": "2024-10-26",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "131",
+          "name": "FC Barcelona",
+          "tablePosition": 1
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "131",
+          "name": "FC Barcelona"
+        },
+        "resultRaw": "0:4",
+        "goalsFor": 0,
+        "goalsAgainst": 4,
+        "resultNote": null,
+        "attendance": 78192
+      },
+      {
+        "matchId": "4445033",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "4",
+        "date": "2024-11-05",
+        "time": "20:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 12
+        },
+        "awayClub": {
+          "id": "5",
+          "name": "AC Milan",
+          "tablePosition": 25
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "5",
+          "name": "AC Milan"
+        },
+        "resultRaw": "1:3",
+        "goalsFor": 1,
+        "goalsAgainst": 3,
+        "resultNote": null,
+        "attendance": 75561
+      },
+      {
+        "matchId": "4407671",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "13",
+        "date": "2024-11-09",
+        "time": "13:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "331",
+          "name": "CA Osasuna",
+          "tablePosition": 5
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "331",
+          "name": "CA Osasuna"
+        },
+        "resultRaw": "4:0",
+        "goalsFor": 4,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 72462
+      },
+      {
+        "matchId": "4407648",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "14",
+        "date": "2024-11-24",
+        "time": "17:30",
+        "homeClub": {
+          "id": "1244",
+          "name": "CD Leganés",
+          "tablePosition": 14
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1244",
+          "name": "CD Leganés"
+        },
+        "resultRaw": "0:3",
+        "goalsFor": 3,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 12338
+      },
+      {
+        "matchId": "4445047",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "5",
+        "date": "2024-11-27",
+        "time": "20:00",
+        "homeClub": {
+          "id": "31",
+          "name": "Liverpool FC",
+          "tablePosition": 1
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 18
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "31",
+          "name": "Liverpool FC"
+        },
+        "resultRaw": "2:0",
+        "goalsFor": 0,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 59546
+      },
+      {
+        "matchId": "4407661",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "15",
+        "date": "2024-12-01",
+        "time": "15:15",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "3709",
+          "name": "Getafe CF",
+          "tablePosition": 15
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "3709",
+          "name": "Getafe CF"
+        },
+        "resultRaw": "2:0",
+        "goalsFor": 2,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 74341
+      },
+      {
+        "matchId": "4407714",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "19",
+        "date": "2024-12-04",
+        "time": "20:00",
+        "homeClub": {
+          "id": "621",
+          "name": "Athletic Bilbao",
+          "tablePosition": 4
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 1
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "621",
+          "name": "Athletic Bilbao"
+        },
+        "resultRaw": "2:1",
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 51364
+      },
+      {
+        "matchId": "4407687",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "16",
+        "date": "2024-12-07",
+        "time": "20:00",
+        "homeClub": {
+          "id": "12321",
+          "name": "Girona FC",
+          "tablePosition": 8
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 1
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "12321",
+          "name": "Girona FC"
+        },
+        "resultRaw": "0:3",
+        "goalsFor": 3,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 13827
+      },
+      {
+        "matchId": "4445076",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "6",
+        "date": "2024-12-10",
+        "time": "20:00",
+        "homeClub": {
+          "id": "800",
+          "name": "Atalanta BC",
+          "tablePosition": 5
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 24
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "800",
+          "name": "Atalanta BC"
+        },
+        "resultRaw": "2:3",
+        "goalsFor": 3,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 22967
+      },
+      {
+        "matchId": "4407706",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "17",
+        "date": "2024-12-14",
+        "time": "20:00",
+        "homeClub": {
+          "id": "367",
+          "name": "Rayo Vallecano",
+          "tablePosition": 12
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 1
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "367",
+          "name": "Rayo Vallecano"
+        },
+        "resultRaw": "3:3",
+        "goalsFor": 3,
+        "goalsAgainst": 3,
+        "resultNote": null,
+        "attendance": 14168
+      },
+      {
+        "matchId": "4462645",
+        "competitionName": "FIFA Intercontinental Cup",
+        "competitionId": "FIC1",
+        "competitionUrl": "/fifa-intercontinental-cup/startseite/pokalwettbewerb/FIC1",
+        "matchday": "4",
+        "date": "2024-12-18",
+        "time": "17:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "4035",
+          "name": "CF Pachuca",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "4035",
+          "name": "CF Pachuca"
+        },
+        "resultRaw": "3:0",
+        "goalsFor": 3,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 67249
+      },
+      {
+        "matchId": "4407678",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "18",
+        "date": "2024-12-22",
+        "time": "15:15",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 1
+        },
+        "awayClub": {
+          "id": "368",
+          "name": "Sevilla FC",
+          "tablePosition": 11
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "368",
+          "name": "Sevilla FC"
+        },
+        "resultRaw": "4:2",
+        "goalsFor": 4,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 75227
+      },
+      {
+        "matchId": "4407701",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "12",
+        "date": "2025-01-03",
+        "time": "20:00",
+        "homeClub": {
+          "id": "1049",
+          "name": "Valencia CF",
+          "tablePosition": 20
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1049",
+          "name": "Valencia CF"
+        },
+        "resultRaw": "1:2",
+        "goalsFor": 2,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 46420
+      },
+      {
+        "matchId": "4506877",
+        "competitionName": "Copa del Rey",
+        "competitionId": "CDR",
+        "competitionUrl": "/copa-del-rey/startseite/pokalwettbewerb/CDR",
+        "matchday": "4",
+        "date": "2025-01-06",
+        "time": "18:00",
+        "homeClub": {
+          "id": "44584",
+          "name": "Deportiva Minera",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "44584",
+          "name": "Deportiva Minera"
+        },
+        "resultRaw": "0:5",
+        "goalsFor": 5,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4523491",
+        "competitionName": "Supercopa",
+        "competitionId": "SUC",
+        "competitionUrl": "/supercopa/startseite/pokalwettbewerb/SUC",
+        "matchday": "1",
+        "date": "2025-01-09",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "237",
+          "name": "RCD Mallorca",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "237",
+          "name": "RCD Mallorca"
+        },
+        "resultRaw": "3:0",
+        "goalsFor": 3,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 47000
+      },
+      {
+        "matchId": "4530083",
+        "competitionName": "Supercopa",
+        "competitionId": "SUC",
+        "competitionUrl": "/supercopa/startseite/pokalwettbewerb/SUC",
+        "matchday": "2",
+        "date": "2025-01-12",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "131",
+          "name": "FC Barcelona",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "131",
+          "name": "FC Barcelona"
+        },
+        "resultRaw": "2:5",
+        "goalsFor": 2,
+        "goalsAgainst": 5,
+        "resultNote": null,
+        "attendance": 60000
+      },
+      {
+        "matchId": "4527517",
+        "competitionName": "Copa del Rey",
+        "competitionId": "CDR",
+        "competitionUrl": "/copa-del-rey/startseite/pokalwettbewerb/CDR",
+        "matchday": "5",
+        "date": "2025-01-16",
+        "time": "20:30",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "940",
+          "name": "Celta de Vigo",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "940",
+          "name": "Celta de Vigo"
+        },
+        "resultRaw": "5:2 AET",
+        "goalsFor": 5,
+        "goalsAgainst": 2,
+        "resultNote": "AET",
+        "attendance": null
+      },
+      {
+        "matchId": "4407732",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "20",
+        "date": "2025-01-19",
+        "time": "15:15",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "472",
+          "name": "UD Las Palmas",
+          "tablePosition": 14
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "472",
+          "name": "UD Las Palmas"
+        },
+        "resultRaw": "4:1",
+        "goalsFor": 4,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 74808
+      },
+      {
+        "matchId": "4445034",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "7",
+        "date": "2025-01-22",
+        "time": "20:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 20
+        },
+        "awayClub": {
+          "id": "409",
+          "name": "Red Bull Salzburg",
+          "tablePosition": 32
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "409",
+          "name": "Red Bull Salzburg"
+        },
+        "resultRaw": "5:1",
+        "goalsFor": 5,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 73692
+      },
+      {
+        "matchId": "4407752",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "21",
+        "date": "2025-01-25",
+        "time": "20:00",
+        "homeClub": {
+          "id": "366",
+          "name": "Real Valladolid CF",
+          "tablePosition": 20
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 1
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "366",
+          "name": "Real Valladolid CF"
+        },
+        "resultRaw": "0:3",
+        "goalsFor": 3,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 26025
+      },
+      {
+        "matchId": "4445144",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "8",
+        "date": "2025-01-29",
+        "time": "20:00",
+        "homeClub": {
+          "id": "3911",
+          "name": "Stade Brestois 29",
+          "tablePosition": 13
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 16
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "3911",
+          "name": "Stade Brestois 29"
+        },
+        "resultRaw": "0:3",
+        "goalsFor": 3,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 15405
+      },
+      {
+        "matchId": "4407780",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "22",
+        "date": "2025-02-01",
+        "time": "20:00",
+        "homeClub": {
+          "id": "714",
+          "name": "RCD Espanyol Barcelona",
+          "tablePosition": 18
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 1
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "714",
+          "name": "RCD Espanyol Barcelona"
+        },
+        "resultRaw": "1:0",
+        "goalsFor": 0,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 33669
+      },
+      {
+        "matchId": "4540705",
+        "competitionName": "Copa del Rey",
+        "competitionId": "CDR",
+        "competitionUrl": "/copa-del-rey/startseite/pokalwettbewerb/CDR",
+        "matchday": "6",
+        "date": "2025-02-05",
+        "time": "20:00",
+        "homeClub": {
+          "id": "1244",
+          "name": "CD Leganés",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1244",
+          "name": "CD Leganés"
+        },
+        "resultRaw": "2:3",
+        "goalsFor": 3,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 11709
+      },
+      {
+        "matchId": "4407769",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "23",
+        "date": "2025-02-08",
+        "time": "20:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 1
+        },
+        "awayClub": {
+          "id": "13",
+          "name": "Atlético de Madrid",
+          "tablePosition": 2
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "13",
+          "name": "Atlético de Madrid"
+        },
+        "resultRaw": "1:1",
+        "goalsFor": 1,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 78082
+      },
+      {
+        "matchId": "4547617",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "9",
+        "date": "2025-02-11",
+        "time": "20:00",
+        "homeClub": {
+          "id": "281",
+          "name": "Manchester City",
+          "tablePosition": 22
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 11
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "281",
+          "name": "Manchester City"
+        },
+        "resultRaw": "2:3",
+        "goalsFor": 3,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 52081
+      },
+      {
+        "matchId": "4407757",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "24",
+        "date": "2025-02-15",
+        "time": "15:15",
+        "homeClub": {
+          "id": "331",
+          "name": "CA Osasuna",
+          "tablePosition": 7
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 1
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "331",
+          "name": "CA Osasuna"
+        },
+        "resultRaw": "1:1",
+        "goalsFor": 1,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 22390
+      },
+      {
+        "matchId": "4547623",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "10",
+        "date": "2025-02-19",
+        "time": "20:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "281",
+          "name": "Manchester City",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "281",
+          "name": "Manchester City"
+        },
+        "resultRaw": "3:1",
+        "goalsFor": 3,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 77023
+      },
+      {
+        "matchId": "4407541",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "25",
+        "date": "2025-02-23",
+        "time": "15:15",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "12321",
+          "name": "Girona FC",
+          "tablePosition": 11
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "12321",
+          "name": "Girona FC"
+        },
+        "resultRaw": "2:0",
+        "goalsFor": 2,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 74028
+      },
+      {
+        "matchId": "4557607",
+        "competitionName": "Copa del Rey",
+        "competitionId": "CDR",
+        "competitionUrl": "/copa-del-rey/startseite/pokalwettbewerb/CDR",
+        "matchday": "7",
+        "date": "2025-02-26",
+        "time": "20:30",
+        "homeClub": {
+          "id": "681",
+          "name": "Real Sociedad",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "681",
+          "name": "Real Sociedad"
+        },
+        "resultRaw": "0:1",
+        "goalsFor": 1,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": null
+      },
+      {
+        "matchId": "4407735",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "26",
+        "date": "2025-03-01",
+        "time": "17:30",
+        "homeClub": {
+          "id": "150",
+          "name": "Real Betis Balompié",
+          "tablePosition": 7
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "150",
+          "name": "Real Betis Balompié"
+        },
+        "resultRaw": "2:1",
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 55873
+      },
+      {
+        "matchId": "4547630",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "11",
+        "date": "2025-03-04",
+        "time": "20:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "13",
+          "name": "Atlético de Madrid",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "13",
+          "name": "Atlético de Madrid"
+        },
+        "resultRaw": "2:1",
+        "goalsFor": 2,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 77261
+      },
+      {
+        "matchId": "4407793",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "27",
+        "date": "2025-03-09",
+        "time": "15:15",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 3
+        },
+        "awayClub": {
+          "id": "367",
+          "name": "Rayo Vallecano",
+          "tablePosition": 8
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "367",
+          "name": "Rayo Vallecano"
+        },
+        "resultRaw": "2:1",
+        "goalsFor": 2,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 74170
+      },
+      {
+        "matchId": "4547637",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "12",
+        "date": "2025-03-12",
+        "time": "20:00",
+        "homeClub": {
+          "id": "13",
+          "name": "Atlético de Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "13",
+          "name": "Atlético de Madrid"
+        },
+        "resultRaw": "3:4 on pens",
+        "goalsFor": 4,
+        "goalsAgainst": 3,
+        "resultNote": "on pens",
+        "attendance": 69304
+      },
+      {
+        "matchId": "4407531",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "28",
+        "date": "2025-03-15",
+        "time": "17:30",
+        "homeClub": {
+          "id": "1050",
+          "name": "Villarreal CF",
+          "tablePosition": 5
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1050",
+          "name": "Villarreal CF"
+        },
+        "resultRaw": "1:2",
+        "goalsFor": 2,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 20559
+      },
+      {
+        "matchId": "4407563",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "29",
+        "date": "2025-03-29",
+        "time": "20:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "1244",
+          "name": "CD Leganés",
+          "tablePosition": 18
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "1244",
+          "name": "CD Leganés"
+        },
+        "resultRaw": "3:2",
+        "goalsFor": 3,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 73641
+      },
+      {
+        "matchId": "4557609",
+        "competitionName": "Copa del Rey",
+        "competitionId": "CDR",
+        "competitionUrl": "/copa-del-rey/startseite/pokalwettbewerb/CDR",
+        "matchday": "8",
+        "date": "2025-04-01",
+        "time": "19:30",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "681",
+          "name": "Real Sociedad",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "681",
+          "name": "Real Sociedad"
+        },
+        "resultRaw": "4:4 AET",
+        "goalsFor": 4,
+        "goalsAgainst": 4,
+        "resultNote": "AET",
+        "attendance": null
+      },
+      {
+        "matchId": "4407545",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "30",
+        "date": "2025-04-05",
+        "time": "14:15",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "1049",
+          "name": "Valencia CF",
+          "tablePosition": 15
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "1049",
+          "name": "Valencia CF"
+        },
+        "resultRaw": "1:2",
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 75382
+      },
+      {
+        "matchId": "4547644",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "13",
+        "date": "2025-04-08",
+        "time": "19:00",
+        "homeClub": {
+          "id": "11",
+          "name": "Arsenal FC",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "11",
+          "name": "Arsenal FC"
+        },
+        "resultRaw": "3:0",
+        "goalsFor": 0,
+        "goalsAgainst": 3,
+        "resultNote": null,
+        "attendance": 60110
+      },
+      {
+        "matchId": "4407628",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "31",
+        "date": "2025-04-13",
+        "time": "14:15",
+        "homeClub": {
+          "id": "1108",
+          "name": "Deportivo Alavés",
+          "tablePosition": 17
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "1108",
+          "name": "Deportivo Alavés"
+        },
+        "resultRaw": "0:1",
+        "goalsFor": 1,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 19438
+      },
+      {
+        "matchId": "4547648",
+        "competitionName": "UEFA Champions League",
+        "competitionId": "CL",
+        "competitionUrl": "/uefa-champions-league/startseite/pokalwettbewerb/CL",
+        "matchday": "14",
+        "date": "2025-04-16",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "11",
+          "name": "Arsenal FC",
+          "tablePosition": null
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "11",
+          "name": "Arsenal FC"
+        },
+        "resultRaw": "1:2",
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 77073
+      },
+      {
+        "matchId": "4407637",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "32",
+        "date": "2025-04-20",
+        "time": "19:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "621",
+          "name": "Athletic Bilbao",
+          "tablePosition": 4
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "621",
+          "name": "Athletic Bilbao"
+        },
+        "resultRaw": "1:0",
+        "goalsFor": 1,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 72535
+      },
+      {
+        "matchId": "4407619",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "33",
+        "date": "2025-04-23",
+        "time": "19:30",
+        "homeClub": {
+          "id": "3709",
+          "name": "Getafe CF",
+          "tablePosition": 12
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "3709",
+          "name": "Getafe CF"
+        },
+        "resultRaw": "0:1",
+        "goalsFor": 1,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 15184
+      },
+      {
+        "matchId": "4588078",
+        "competitionName": "Copa del Rey",
+        "competitionId": "CDR",
+        "competitionUrl": "/copa-del-rey/startseite/pokalwettbewerb/CDR",
+        "matchday": "9",
+        "date": "2025-04-26",
+        "time": "20:00",
+        "homeClub": {
+          "id": "131",
+          "name": "FC Barcelona",
+          "tablePosition": null
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": null
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "131",
+          "name": "FC Barcelona"
+        },
+        "resultRaw": "3:2 AET",
+        "goalsFor": 2,
+        "goalsAgainst": 3,
+        "resultNote": "AET",
+        "attendance": 65080
+      },
+      {
+        "matchId": "4407610",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "34",
+        "date": "2025-05-04",
+        "time": "12:00",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "940",
+          "name": "Celta de Vigo",
+          "tablePosition": 7
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "940",
+          "name": "Celta de Vigo"
+        },
+        "resultRaw": "3:2",
+        "goalsFor": 3,
+        "goalsAgainst": 2,
+        "resultNote": null,
+        "attendance": 67661
+      },
+      {
+        "matchId": "4407595",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "35",
+        "date": "2025-05-11",
+        "time": "14:15",
+        "homeClub": {
+          "id": "131",
+          "name": "FC Barcelona",
+          "tablePosition": 1
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "131",
+          "name": "FC Barcelona"
+        },
+        "resultRaw": "4:3",
+        "goalsFor": 3,
+        "goalsAgainst": 4,
+        "resultNote": null,
+        "attendance": 50319
+      },
+      {
+        "matchId": "4407581",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "36",
+        "date": "2025-05-14",
+        "time": "19:30",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "237",
+          "name": "RCD Mallorca",
+          "tablePosition": 8
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "237",
+          "name": "RCD Mallorca"
+        },
+        "resultRaw": "2:1",
+        "goalsFor": 2,
+        "goalsAgainst": 1,
+        "resultNote": null,
+        "attendance": 60753
+      },
+      {
+        "matchId": "4407590",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "37",
+        "date": "2025-05-18",
+        "time": "17:00",
+        "homeClub": {
+          "id": "368",
+          "name": "Sevilla FC",
+          "tablePosition": 14
+        },
+        "awayClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "venue": "away",
+        "opponent": {
+          "id": "368",
+          "name": "Sevilla FC"
+        },
+        "resultRaw": "0:2",
+        "goalsFor": 2,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 32500
+      },
+      {
+        "matchId": "4407566",
+        "competitionName": "LaLiga",
+        "competitionId": "ES1",
+        "competitionUrl": "/laliga/startseite/wettbewerb/ES1",
+        "matchday": "38",
+        "date": "2025-05-24",
+        "time": "14:15",
+        "homeClub": {
+          "id": "418",
+          "name": "Real Madrid",
+          "tablePosition": 2
+        },
+        "awayClub": {
+          "id": "681",
+          "name": "Real Sociedad",
+          "tablePosition": 11
+        },
+        "venue": "home",
+        "opponent": {
+          "id": "681",
+          "name": "Real Sociedad"
+        },
+        "resultRaw": "2:0",
+        "goalsFor": 2,
+        "goalsAgainst": 0,
+        "resultNote": null,
+        "attendance": 73186
+      }
+    ]
+  }
+}
