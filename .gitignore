@@ -162,3 +162,5 @@ cython_debug/
 
 # Vercel
 .vercel/
+
+.DS_Store
