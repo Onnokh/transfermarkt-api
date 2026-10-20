@@ -1,8 +1,8 @@
 # transfermarkt-api
 
-A RESTful API (FastAPI) for football data from [Transfermarkt](https://www.transfermarkt.com/): players, clubs and competitions.
+An async Python SDK and RESTful API (FastAPI) for football data from [Transfermarkt](https://www.transfermarkt.com/): players, clubs, coaches, competitions and matches.
 
-Since version 4.0.0, data comes from Transfermarkt's JSON API (`tmapi.transfermarkt.technology`), the same API the website uses, instead of scraping HTML pages. The website blocks requests from most cloud hosts, which broke v3 deployments; the JSON API does not. See [CHANGELOG.md](CHANGELOG.md) for what changed in the response format.
+Since version 4.0.0, data comes from Transfermarkt's JSON API, the same API the website uses, instead of scraping HTML pages. Upstream requests can still be blocked or fail; the SDK and service distinguish these failures. See [CHANGELOG.md](CHANGELOG.md) for changes to the response format.
 
 Please note that the deployed application is used only for testing purposes and is rate limited to 2 requests
 every 3 seconds per client IP. If you'd like to customize it, consider hosting in your own cloud service.
@@ -10,7 +10,8 @@ every 3 seconds per client IP. If you'd like to customize it, consider hosting i
 The JSON API is internal to Transfermarkt and undocumented: it can change without notice. This project's MIT license covers its code, not the data; check [Transfermarkt's terms](https://www.transfermarkt.com/intern/) before using the data in your own services.
 
 ### API Swagger
-https://transfermarkt-api.fly.dev/
+
+[Interactive API documentation](https://transfermarkt-api.fly.dev/docs)
 
 ### Endpoints
 
@@ -27,7 +28,7 @@ https://transfermarkt-api.fly.dev/
 | `GET /players/{player_id}/achievements` | Titles and awards with season, club and competition |
 | `GET /players/{player_id}/national_career` | Senior and youth national teams |
 | `GET /players/{player_id}/jersey_numbers` | `501`: no data source |
-| `GET /countries/` | Country IDs and metadata, including historical entries; cached for 24 hours |
+| `GET /countries/` | Country IDs and metadata, including historical entries; cached for 24 hours by default |
 | `GET /clubs/?country_id=` | Available club IDs and names for a country; limited upstream coverage, no pagination |
 | `GET /clubs/search/{club_name}?page_number=` | 10 results per page |
 | `GET /clubs/{club_id}/profile` | Squad value details, historical names and stadium details |
@@ -42,13 +43,132 @@ https://transfermarkt-api.fly.dev/
 | `GET /competitions/{competition_id}/seasons` | Valid `season_id` values |
 | `GET /games/{game_id}` | Score, lineups, coaches, stadium, team stats, goals, cards and substitutions |
 
-Errors: `404` unknown ID, `501` endpoint without data source, `502` unexpected upstream response, `503` upstream blocked or refused the request, `504` upstream timeout.
+Errors: `404` unknown ID, `422` invalid parameters, `429` HTTP client rate limit exceeded, `501` endpoint without data source, `502` unexpected upstream response, `503` upstream blocked or refused the request, `504` upstream timeout. An upstream `429` maps to `503`, distinct from the service's own rate limit.
 
-Fields without an upstream value are returned as `null`. `updatedAt` is when the underlying data was fetched from Transfermarkt; responses are cached for 10 minutes by default.
+Fields without an upstream value are returned as `null`. `updatedAt` represents the oldest upstream fetch used to assemble the response, in UTC without a timezone suffix. Successful upstream payloads are cached for 10 minutes by default; reference data is cached for 24 hours.
+
+### Python SDK
+
+Requires Python **3.12 or 3.13**. The SDK is published on [PyPI](https://pypi.org/project/transfermarkt-api/). Install it without server dependencies:
+
+```bash
+pip install transfermarkt-api
+```
+
+Release setup and the publishing procedure are documented in [Python package releases](docs/releases.md).
+
+```python
+import asyncio
+
+from transfermarkt_api import Transfermarkt
+
+
+async def main() -> None:
+    async with Transfermarkt() as tm:
+        squad = await tm.club_players("985")
+        for player in squad.players:
+            print(player.shirt_number, player.name, player.position, player.market_value)
+        print(squad.model_dump(mode="json", by_alias=True))
+
+
+asyncio.run(main())
+```
+
+The facade has one method per data endpoint: `player_profile`, `player_transfers`, `club_players`,
+`competition_clubs`, `competition_table`, `game`, and the remaining methods listed in the
+[SDK method table](docs/plans/0001-python-sdk.md#public-contract). Methods return typed Pydantic models exported
+from `transfermarkt_api.schemas`. Nested models remain available in their resource modules. Use string entity
+and season IDs, integer country IDs, and 1-based page numbers. Paginated methods return one page; callers control pagination.
+
+Constructor settings are explicit: `base_url`, `timeout` (seconds, `httpx.Timeout`, or `None`),
+`max_concurrency` (default `10`), `transport`, and `cache`. The SDK reads no `.env` or environment settings on import.
+`CacheConfig(ttl=600, reference_ttl=86400, max_entries=2000)` configures per-client caching. Pass `cache=None` to
+disable both response and reference caches so every request reaches the transport.
+
+One client supports concurrent calls within one event loop. Its async context manager, or explicit `aclose()`,
+closes the HTTP client and supplied transport. Do not share a supplied transport across client lifetimes unless
+your wrapper owns and controls its closure. Cache hits remain local to each SDK instance.
+
+The SDK raises `NotFound`, `UpstreamBlocked`, `UpstreamTimeout`, `UpstreamError`, or `EndpointUnavailable`, all
+derived from `TransfermarktError` and exported at the package root. Available upstream URL/status metadata lives
+on `error.url` and `error.status_code`; the status is the upstream status, not the server's mapped HTTP status.
+The unsupported `player_jersey_numbers` method raises `EndpointUnavailable` without fetching data.
+Page numbers, country IDs and concurrency caps must be positive integers. With the default transport, timeouts and
+connection errors map to SDK exceptions. With an injected transport, its exceptions propagate unchanged, including
+native `httpx` errors; callers classify those transport errors themselves.
+
+### Custom transports and replay
+
+Supply an `httpx.AsyncBaseTransport` to control every upstream request, including reference lookups, batches,
+and per-player fan-out. The SDK bounds in-flight concurrency; the caller's transport owns rate limits, retries,
+proxy selection, recording and circuit breakers. The SDK performs no automatic retries.
+
+```python
+import asyncio
+
+import httpx
+
+from transfermarkt_api import Transfermarkt
+
+
+async def main() -> None:
+    async with Transfermarkt(
+        transport=httpx.AsyncHTTPTransport(proxy="http://127.0.0.1:8080"),
+        cache=None,
+    ) as tm:
+        squad = await tm.club_players("985", season_id="2024")
+        print(squad.model_dump(mode="json", by_alias=True))
+
+
+asyncio.run(main())
+```
+
+The proxy address is an example; configure your own proxy. A browser-capable backend can implement the same transport interface.
+
+[Recording and replay examples](examples/transports.py) wrap a caller-selected backend and save the response
+before SDK parsing. Persist the method, full URL with repeated query parameters, status, relevant headers (including
+`x-amzn-waf-action`), decoded body, and original fetch timestamp. The example store is in memory; replace it with
+durable storage in your application. When reconstructing decoded responses, drop content-encoding/content-length
+headers so the body is not decoded twice.
+
+A replay transport returns an `httpx.Response` with
+`extensions={"transfermarkt_fetched_at": captured_datetime}`. This optional metadata accepts naive or timezone-aware
+datetimes. Aware inputs are converted to UTC; naive inputs are interpreted as UTC. `updatedAt` retains its existing
+JSON shape without a timezone suffix and always represents UTC. Without metadata, it reports the current UTC fetch
+time. Each model reports the oldest fetch time used in that call, including cache hits. Exact replay
+needs the same response bodies and timestamps. Missing recordings must raise a transport error rather than fetch
+live data. Batch URLs are stable; concurrent request completion order is not part of the replay key.
+
+Run this recording/replay example from a repository checkout:
+
+```python
+import asyncio
+
+import httpx
+
+from examples.transports import RecordingTransport, ReplayTransport
+from transfermarkt_api import Transfermarkt
+
+
+async def main() -> None:
+    records = {}
+    async with Transfermarkt(transport=RecordingTransport(httpx.AsyncHTTPTransport(), records), cache=None) as tm:
+        captured = await tm.club_players("985")
+    async with Transfermarkt(transport=ReplayTransport(records), cache=None) as tm:
+        replayed = await tm.club_players("985")
+    assert captured == replayed
+
+
+asyncio.run(main())
+```
+
+The examples and HTTP server are repository files. The wheel installs only the `transfermarkt_api` package,
+avoiding collisions with a consumer's own `app` package. The `server` extra installs the server dependencies;
+run `uvicorn app.main:app` from a repository checkout, or use the Docker image.
 
 ### Running Locally
 
-Requires [uv](https://docs.astral.sh/uv/).
+Requires [uv](https://docs.astral.sh/uv/). Run these commands from a repository checkout; the wheel contains the SDK, not the `app` server package.
 
 ````bash
 # Clone the repository
@@ -58,10 +178,10 @@ $ git clone https://github.com/felipeall/transfermarkt-api.git
 $ cd transfermarkt-api
 
 # Install Python 3.12 and the dependencies
-$ uv sync
+$ uv sync --python 3.12 --extra server
 
 # Start the API server
-$ uv run uvicorn app.main:app --reload
+$ uv run --extra server uvicorn app.main:app --reload
 
 # Access the API local page
 $ open http://localhost:8000/
@@ -71,14 +191,17 @@ $ open http://localhost:8000/
 
 ````bash
 # Offline tests (recorded upstream responses, no network)
-$ uv run pytest
+$ uv run --extra server pytest
 
 # Live smoke tests against Transfermarkt's JSON API
-$ uv run pytest -m live
+$ uv run --extra server pytest -m live
 
-# Re-record upstream fixtures and response snapshots
-$ rm -rf tests/fixtures/tfmkt && uv run python scripts/capture_fixtures.py
+# Re-record selected upstream fixtures and API snapshots (makes live requests)
+$ uv run --extra server python scripts/capture_fixtures.py clubs_131_players
 ````
+
+The capture script retains existing recordings and updates selected URLs and API snapshots. Omit the case-name filter
+to capture all cases. Review the changed files; the frozen `tests/snapshots/v3/` baseline is not regenerated.
 
 ### Running via Docker
 
@@ -101,11 +224,13 @@ $ open http://localhost:8000/
 
 ### Environment Variables
 
+These settings configure the HTTP server and can be loaded from `.env`. SDK callers pass constructor arguments instead.
+
 | Variable                      | Description                                                                                            | Default                                  |
 |-------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------|
 | `RATE_LIMITING_ENABLE`        | Enable rate limiting feature for API calls                                                             | `false`                                  |
 | `RATE_LIMITING_FREQUENCY`     | Requests allowed per client IP across all routes, in [limits notation](https://limits.readthedocs.io/en/stable/quickstart.html#rate-limit-string-notation) | `2/3seconds`                             |
-| `TFMKT_BASE_URL`              | Transfermarkt JSON API base URL                                                                        | `https://tmapi.transfermarkt.technology` |
+| `TFMKT_BASE_URL`              | Transfermarkt JSON API base URL                                                                        | Built-in upstream endpoint |
 | `TFMKT_TIMEOUT_SECONDS`       | Timeout for each upstream request                                                                      | `15`                                     |
 | `TFMKT_MAX_CONCURRENCY`       | Maximum concurrent upstream requests across the whole server                                          | `10`                                     |
 | `CACHE_TTL_SECONDS`           | How long successful upstream responses are cached                                                      | `600`                                    |
